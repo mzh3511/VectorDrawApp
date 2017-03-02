@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DDFEB80-0BFA-4CF5-B2C5-3D1FD7E3A2D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VectorDrawApp</RootNamespace>
+    <AssemblyName>VectorDrawApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="vdCommandLine, Version=7.7003.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>VDLibs\vdCommandLine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="vdFramedControl, Version=7.7003.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>VDLibs\vdFramedControl.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="vdPropertyGrid, Version=7.7003.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>VDLibs\vdPropertyGrid.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VDrawBaseControl, Version=7.7003.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>VDLibs\VDrawBaseControl.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VectorDraw.Actions, Version=7.7003.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>VDLibs\VectorDraw.Actions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VectorDraw.ExDialogs">
+      <HintPath>VDLibs\VectorDraw.ExDialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VectorDraw.Fonts">
+      <HintPath>VDLibs\VectorDraw.Fonts.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VectorDraw.Generics, Version=7.7003.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>VDLibs\VectorDraw.Generics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VectorDraw.Geometry, Version=7.7003.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>VDLibs\VectorDraw.Geometry.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VectorDraw.Professional, Version=7.7003.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>VDLibs\VectorDraw.Professional.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VectorDraw.Render, Version=7.7003.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>VDLibs\VectorDraw.Render.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VectorDraw.Serialize, Version=7.7003.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>VDLibs\VectorDraw.Serialize.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\DetailSelectionCommand.cs" />
+    <Compile Include="Commands\FindSimilarsCommand.cs" />
+    <Compile Include="Commands\LocateGridSelectionCommand.cs" />
+    <Compile Include="Commands\SelectNextCommand.cs" />
+    <Compile Include="Commands\VectorDrawCommand.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVD.designer.cs">
+      <DependentUpon>frmVD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatchingLib\XmlProvider.cs" />
+    <Compile Include="VdUtils\VdSqlUtil.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MatchingLib\Filters\ArcFigureFilter.cs" />
+    <Compile Include="MatchingLib\Filters\BaseFigureFilter.cs" />
+    <Compile Include="MatchingLib\Filters\CircleFigureFilter.cs" />
+    <Compile Include="MatchingLib\Filters\FilterFactory.cs" />
+    <Compile Include="MatchingLib\Filters\LineFigureFilter.cs" />
+    <Compile Include="MatchingLib\Filters\PolyhatchFigureFilter.cs" />
+    <Compile Include="MatchingLib\Filters\PolylineFigureFilter.cs" />
+    <Compile Include="MatchingLib\Filters\TextFigureFilter.cs" />
+    <Compile Include="MatchingLib\Comparers\MajorFigureComparer.cs" />
+    <Compile Include="MatchingLib\MatchItem.cs" />
+    <Compile Include="MatchingLib\Comparers\FigureMidPointComparer.cs" />
+    <Compile Include="MatchingLib\FigureSet.cs" />
+    <Compile Include="MatchingLib\MatchProcessor.cs" />
+    <Compile Include="VdUtils\VdControlUtil.cs" />
+    <Compile Include="VdUtils\VdProUtil.cs" />
+    <EmbeddedResource Include="frmVD.resx">
+      <DependentUpon>frmVD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVD.zh-CHS.resx">
+      <DependentUpon>frmVD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="VDLibs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>IF NOT EXIST "$(TargetDir)VDLibs\VDrawBaseControl.dll" XCOPY /Y /S "$(ProjectDir)VDLibs" "$(TargetDir)VDLibs\"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
