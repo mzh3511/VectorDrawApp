@@ -45,7 +45,7 @@ namespace VectorDrawApp.MatchingLib
         public Box GetBoundingBox()
         {
             if (_boundingBox.IsEmpty && _entities.Count != 0)
-                _boundingBox = VdProUtil.GetBoundingBox(_entities);
+                _boundingBox = VdActionUtil.GetBoundingBox(_entities);
             return _boundingBox;
         }
 

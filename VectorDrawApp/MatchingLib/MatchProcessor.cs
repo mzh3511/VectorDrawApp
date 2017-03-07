@@ -101,8 +101,8 @@ namespace VectorDrawApp.MatchingLib
             }
             if (selectingList.Count > 0)
             {
-                VdProUtil.SelectFigures(_document, selectingList);
-                VdProUtil.RefreshVectorDraw(_document);
+                VdActionUtil.SelectFigures(_document, selectingList);
+                VdActionUtil.RefreshVectorDraw(_document);
             }
 
             return result;

@@ -150,6 +150,33 @@
   <data name="grpxCond.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
   </data>
+  <data name="btnViewBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnViewBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 187</value>
+  </data>
+  <data name="btnViewBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnViewBox.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="btnViewBox.Text" xml:space="preserve">
+    <value>显示框选</value>
+  </data>
+  <data name="&gt;&gt;btnViewBox.Name" xml:space="preserve">
+    <value>btnViewBox</value>
+  </data>
+  <data name="&gt;&gt;btnViewBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnViewBox.Parent" xml:space="preserve">
+    <value>grpxCond</value>
+  </data>
+  <data name="&gt;&gt;btnViewBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btnDisNode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -175,7 +202,7 @@
     <value>grpxCond</value>
   </data>
   <data name="&gt;&gt;btnDisNode.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="grpxItemList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
@@ -184,28 +211,28 @@
     <value>17, 17</value>
   </metadata>
   <data name="tsmiSelectAllSub.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 22</value>
+    <value>182, 22</value>
   </data>
   <data name="tsmiSelectAllSub.Text" xml:space="preserve">
     <value>勾选所有子节点</value>
   </data>
   <data name="tsmiUnSelectAllSub.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 22</value>
+    <value>182, 22</value>
   </data>
   <data name="tsmiUnSelectAllSub.Text" xml:space="preserve">
     <value>不勾选所有子节点</value>
   </data>
   <data name="tsmiGetDescription.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 22</value>
+    <value>182, 22</value>
   </data>
   <data name="tsmiGetDescription.Text" xml:space="preserve">
     <value>获取图元集描述</value>
   </data>
   <data name="tsmiSepExport.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 6</value>
+    <value>179, 6</value>
   </data>
   <data name="tsmiDelete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 22</value>
+    <value>182, 22</value>
   </data>
   <data name="tsmiDelete.Text" xml:space="preserve">
     <value>删除</value>
@@ -223,7 +250,7 @@
     <value>导入剪切板中的Xml</value>
   </data>
   <data name="ctxTree.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 164</value>
+    <value>183, 142</value>
   </data>
   <data name="&gt;&gt;ctxTree.Name" xml:space="preserve">
     <value>ctxTree</value>
@@ -277,7 +304,7 @@
     <value>grpxCond</value>
   </data>
   <data name="&gt;&gt;grpxItemList.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btnVisibleProperty.Location" type="System.Drawing.Point, System.Drawing">
     <value>133, 142</value>
@@ -301,7 +328,7 @@
     <value>grpxCond</value>
   </data>
   <data name="&gt;&gt;btnVisibleProperty.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btnFindById.Location" type="System.Drawing.Point, System.Drawing">
     <value>133, 113</value>
@@ -325,7 +352,7 @@
     <value>grpxCond</value>
   </data>
   <data name="&gt;&gt;btnFindById.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="txtHandleId.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 37</value>
@@ -349,7 +376,7 @@
     <value>grpxCond</value>
   </data>
   <data name="&gt;&gt;txtHandleId.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="lblHandleId.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -376,7 +403,7 @@
     <value>grpxCond</value>
   </data>
   <data name="&gt;&gt;lblHandleId.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="grpxCond.Location" type="System.Drawing.Point, System.Drawing">
     <value>580, 1</value>
@@ -435,28 +462,28 @@
   <data name="&gt;&gt;tsmiGetDescription.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tsmiExport.Name" xml:space="preserve">
-    <value>tsmiExport</value>
-  </data>
-  <data name="&gt;&gt;tsmiExport.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;tsmiSepExport.Name" xml:space="preserve">
     <value>tsmiSepExport</value>
   </data>
   <data name="&gt;&gt;tsmiSepExport.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tsmiImport.Name" xml:space="preserve">
-    <value>tsmiImport</value>
-  </data>
-  <data name="&gt;&gt;tsmiImport.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;tsmiDelete.Name" xml:space="preserve">
     <value>tsmiDelete</value>
   </data>
   <data name="&gt;&gt;tsmiDelete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsmiExport.Name" xml:space="preserve">
+    <value>tsmiExport</value>
+  </data>
+  <data name="&gt;&gt;tsmiExport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsmiImport.Name" xml:space="preserve">
+    <value>tsmiImport</value>
+  </data>
+  <data name="&gt;&gt;tsmiImport.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

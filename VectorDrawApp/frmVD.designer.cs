@@ -39,14 +39,15 @@
             this.tsmiSelectAllSub = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiUnSelectAllSub = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiGetDescription = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSepExport = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmiDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiExport = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiImport = new System.Windows.Forms.ToolStripMenuItem();
             this.btnVisibleProperty = new System.Windows.Forms.Button();
             this.btnFindById = new System.Windows.Forms.Button();
             this.txtHandleId = new System.Windows.Forms.TextBox();
             this.lblHandleId = new System.Windows.Forms.Label();
-            this.tsmiExport = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiSepExport = new System.Windows.Forms.ToolStripSeparator();
-            this.tsmiImport = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnViewBox = new System.Windows.Forms.Button();
             this.grpxCond.SuspendLayout();
             this.grpxItemList.SuspendLayout();
             this.ctxTree.SuspendLayout();
@@ -64,6 +65,7 @@
             // grpxCond
             // 
             resources.ApplyResources(this.grpxCond, "grpxCond");
+            this.grpxCond.Controls.Add(this.btnViewBox);
             this.grpxCond.Controls.Add(this.btnDisNode);
             this.grpxCond.Controls.Add(this.grpxItemList);
             this.grpxCond.Controls.Add(this.btnVisibleProperty);
@@ -131,6 +133,29 @@
             resources.ApplyResources(this.tsmiGetDescription, "tsmiGetDescription");
             this.tsmiGetDescription.Click += new System.EventHandler(this.tsmiGetDescription_Click);
             // 
+            // tsmiSepExport
+            // 
+            this.tsmiSepExport.Name = "tsmiSepExport";
+            resources.ApplyResources(this.tsmiSepExport, "tsmiSepExport");
+            // 
+            // tsmiDelete
+            // 
+            this.tsmiDelete.Name = "tsmiDelete";
+            resources.ApplyResources(this.tsmiDelete, "tsmiDelete");
+            this.tsmiDelete.Click += new System.EventHandler(this.tsmiDelete_Click);
+            // 
+            // tsmiExport
+            // 
+            this.tsmiExport.Name = "tsmiExport";
+            resources.ApplyResources(this.tsmiExport, "tsmiExport");
+            this.tsmiExport.Click += new System.EventHandler(this.tsmiExport_Click);
+            // 
+            // tsmiImport
+            // 
+            this.tsmiImport.Name = "tsmiImport";
+            resources.ApplyResources(this.tsmiImport, "tsmiImport");
+            this.tsmiImport.Click += new System.EventHandler(this.tsmiImport_Click);
+            // 
             // btnVisibleProperty
             // 
             resources.ApplyResources(this.btnVisibleProperty, "btnVisibleProperty");
@@ -155,28 +180,12 @@
             resources.ApplyResources(this.lblHandleId, "lblHandleId");
             this.lblHandleId.Name = "lblHandleId";
             // 
-            // tsmiExport
+            // btnViewBox
             // 
-            this.tsmiExport.Name = "tsmiExport";
-            resources.ApplyResources(this.tsmiExport, "tsmiExport");
-            this.tsmiExport.Click += new System.EventHandler(this.tsmiExport_Click);
-            // 
-            // tsmiSepExport
-            // 
-            this.tsmiSepExport.Name = "tsmiSepExport";
-            resources.ApplyResources(this.tsmiSepExport, "tsmiSepExport");
-            // 
-            // tsmiImport
-            // 
-            this.tsmiImport.Name = "tsmiImport";
-            resources.ApplyResources(this.tsmiImport, "tsmiImport");
-            this.tsmiImport.Click += new System.EventHandler(this.tsmiImport_Click);
-            // 
-            // tsmiDelete
-            // 
-            this.tsmiDelete.Name = "tsmiDelete";
-            resources.ApplyResources(this.tsmiDelete, "tsmiDelete");
-            this.tsmiDelete.Click += new System.EventHandler(this.tsmiDelete_Click);
+            resources.ApplyResources(this.btnViewBox, "btnViewBox");
+            this.btnViewBox.Name = "btnViewBox";
+            this.btnViewBox.UseVisualStyleBackColor = true;
+            this.btnViewBox.Click += new System.EventHandler(this.btnViewBox_Click);
             // 
             // frmVD
             // 
@@ -217,5 +226,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiExport;
         private System.Windows.Forms.ToolStripMenuItem tsmiImport;
         private System.Windows.Forms.ToolStripMenuItem tsmiDelete;
+        private System.Windows.Forms.Button btnViewBox;
     }
 }

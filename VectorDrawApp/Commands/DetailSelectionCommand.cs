@@ -11,7 +11,7 @@ namespace VectorDrawApp.Commands
         public override object Execute(vdControls.vdFramedControl vdFramedControl)
         {
             var document = vdFramedControl.BaseControl.ActiveDocument;
-            var selection = VdProUtil.GetGripSelection(document.ActionLayout);
+            var selection = VdActionUtil.GetGripSelection(document.ActionLayout);
             if (selection.Count == 0)
                 return string.Empty;
             var sb = new StringBuilder();

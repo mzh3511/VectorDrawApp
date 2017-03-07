@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using VectorDraw.Actions;
 using VectorDraw.Geometry;
 using VectorDraw.Professional.vdCollections;
 using VectorDraw.Professional.vdObjects;
@@ -7,7 +8,7 @@ using VectorDraw.Professional.vdPrimaries;
 
 namespace VectorDrawApp.VdUtils
 {
-    public class VdProUtil
+    public class VdActionUtil
     {
         public static vdSelection GetGripSelection(vdLayout layout)
         {
@@ -73,6 +74,15 @@ namespace VectorDrawApp.VdUtils
         {
             var vdEntities = new vdEntities(entities.ToArray());
             return vdEntities.GetBoundingBox(true, true);
+        }
+
+        public static bool TryGetUserRect(vdDocument document,out Box box)
+        {
+            box = null;
+            var pt = document.ActionUtility.getUserPoint() as gPoint;
+            if (pt == null)
+                return false;
+            return document.ActionUtility.getUserRectViewCS(pt, out box) == StatusCode.Success;
         }
 
         public static void RefreshVectorDraw(vdDocument document)

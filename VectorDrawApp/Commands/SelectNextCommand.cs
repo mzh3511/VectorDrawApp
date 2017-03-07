@@ -37,9 +37,9 @@ namespace VectorDrawApp.Commands
             {
                 _moveNothingCount = 0;
                 var entities = _setList[_setIndex];
-                VdProUtil.SelectFigures(vdFramedControl.BaseControl.ActiveDocument, entities);
-                VdProUtil.LocateFigures(vdFramedControl.BaseControl.ActiveDocument, entities);
-                VdProUtil.RefreshVectorDraw(vdFramedControl.BaseControl.ActiveDocument);
+                VdActionUtil.SelectFigures(vdFramedControl.BaseControl.ActiveDocument, entities);
+                VdActionUtil.LocateFigures(vdFramedControl.BaseControl.ActiveDocument, entities);
+                VdActionUtil.RefreshVectorDraw(vdFramedControl.BaseControl.ActiveDocument);
             }
             else
             {

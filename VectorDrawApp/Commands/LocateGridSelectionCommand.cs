@@ -15,8 +15,8 @@ namespace VectorDrawApp.Commands
             var selectedObjArr = vdGrid.SelectedObject as object[];
             if (selectedObjArr == null)
                 return null;
-            VdProUtil.LocateFigures(document, selectedObjArr.OfType<vdFigure>().ToList());
-            VdProUtil.RefreshVectorDraw(document);
+            VdActionUtil.LocateFigures(document, selectedObjArr.OfType<vdFigure>().ToList());
+            VdActionUtil.RefreshVectorDraw(document);
             return null;
         }
     }

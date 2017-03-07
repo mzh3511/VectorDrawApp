@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using VectorDraw.Geometry;
 using VectorDrawApp.MatchingLib;
 using VectorDraw.Professional.vdPrimaries;
 using VectorDrawApp.Commands;
@@ -105,9 +106,9 @@ namespace VectorDrawApp
                 figures.Add(figure);
             }
 
-            VdProUtil.SelectFigures(document, figures);
-            VdProUtil.LocateFigures(document, figures);
-            VdProUtil.RefreshVectorDraw(document);
+            VdActionUtil.SelectFigures(document, figures);
+            VdActionUtil.LocateFigures(document, figures);
+            VdActionUtil.RefreshVectorDraw(document);
         }
 
         private void btnVisibleProperty_Click(object sender, EventArgs e)
@@ -178,9 +179,9 @@ namespace VectorDrawApp
             var figureSet = e.Node.Tag as FigureSet;
             if (figureSet == null)
                 return;
-            VdProUtil.SelectFigures(VD.BaseControl.ActiveDocument, figureSet.Entities);
-            VdProUtil.LocateFigures(VD.BaseControl.ActiveDocument, figureSet.Entities);
-            VdProUtil.RefreshVectorDraw(VD.BaseControl.ActiveDocument);
+            VdActionUtil.SelectFigures(VD.BaseControl.ActiveDocument, figureSet.Entities);
+            VdActionUtil.LocateFigures(VD.BaseControl.ActiveDocument, figureSet.Entities);
+            VdActionUtil.RefreshVectorDraw(VD.BaseControl.ActiveDocument);
         }
 
         private void btnDisNode_Click(object sender, EventArgs e)
@@ -198,9 +199,9 @@ namespace VectorDrawApp
                     list.AddRange(figureSet.Entities);
                 }
             }
-            VdProUtil.SelectFigures(VD.BaseControl.ActiveDocument, list);
-            VdProUtil.LocateFigures(VD.BaseControl.ActiveDocument, list);
-            VdProUtil.RefreshVectorDraw(VD.BaseControl.ActiveDocument);
+            VdActionUtil.SelectFigures(VD.BaseControl.ActiveDocument, list);
+            VdActionUtil.LocateFigures(VD.BaseControl.ActiveDocument, list);
+            VdActionUtil.RefreshVectorDraw(VD.BaseControl.ActiveDocument);
         }
 
         private void tsmiSelectAllSub_Click(object sender, EventArgs e)
@@ -300,6 +301,20 @@ namespace VectorDrawApp
                 AddMatchItem2Tree(matchItem);
             }
             MessageBox.Show($"成功导入{list.Count}条数据");
+        }
+
+        private void btnViewBox_Click(object sender, EventArgs e)
+        {
+            Box box = null;
+            if (VdActionUtil.TryGetUserRect(VD.BaseControl.ActiveDocument, out box))
+            {
+                var form = new FormViewer
+                {
+                    Document = VD.BaseControl.ActiveDocument,
+                    RenderingArea = box
+                };
+                form.Show(this);
+            }
         }
     }
 }

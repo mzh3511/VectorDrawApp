@@ -108,11 +108,11 @@
     <Compile Include="Commands\LocateGridSelectionCommand.cs" />
     <Compile Include="Commands\SelectNextCommand.cs" />
     <Compile Include="Commands\VectorDrawCommand.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FormViewer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormViewer.Designer.cs">
+      <DependentUpon>FormViewer.cs</DependentUpon>
     </Compile>
     <Compile Include="frmVD.cs">
       <SubType>Form</SubType>
@@ -138,7 +138,10 @@
     <Compile Include="MatchingLib\FigureSet.cs" />
     <Compile Include="MatchingLib\MatchProcessor.cs" />
     <Compile Include="VdUtils\VdControlUtil.cs" />
-    <Compile Include="VdUtils\VdProUtil.cs" />
+    <Compile Include="VdUtils\VdActionUtil.cs" />
+    <EmbeddedResource Include="FormViewer.resx">
+      <DependentUpon>FormViewer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmVD.resx">
       <DependentUpon>frmVD.cs</DependentUpon>
     </EmbeddedResource>

@@ -11,7 +11,7 @@ namespace VectorDrawApp.VdUtils
                 return;
             if (layoutStyle == vdControls.vdFramedControl.LayoutStyle.PropertyGrid)
             {
-                var selection = VdProUtil.GetGripSelection(vd.BaseControl.ActiveDocument.ActionLayout);
+                var selection = VdActionUtil.GetGripSelection(vd.BaseControl.ActiveDocument.ActionLayout);
                 if (selection.Count > 0)
                     vd.vdGrid.SelectedObject = selection;
                 else

@@ -13,7 +13,7 @@ namespace VectorDrawApp.Commands
             var document = vdFramedControl.BaseControl.ActiveDocument;
             var layout = vdFramedControl.BaseControl.ActiveDocument.ActiveLayOut;
 
-            var gripSelection = VdProUtil.GetGripSelection(layout);
+            var gripSelection = VdActionUtil.GetGripSelection(layout);
             var srcList = layout.Entities.Cast<vdFigure>().ToList();
             var entitiesOfSample = gripSelection.Cast<vdFigure>().ToList();
 
