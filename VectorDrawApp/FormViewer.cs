@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,15 +31,42 @@ namespace VectorDrawApp
             //SetStyle(ControlStyles.DoubleBuffer, true); // 双缓冲
             UpdateStyles();
         }
+        /// <summary>
+        /// 获取设备句柄
+        /// </summary>
+        /// <param name="hwnd"></param>
+        /// <returns></returns>
+        [DllImport("USER32.DLL",EntryPoint = "GetDC")]
+        public static extern IntPtr GetDC(IntPtr hwnd);
+
+        /// <summary>
+        /// 释放函数
+        /// </summary>
+        /// <param name="hwnd"></param>
+        /// <param name="hdc"></param>
+        /// <returns></returns>
+        [DllImport("USER32.DLL", EntryPoint = "ReleaseDC")]
+        public static extern IntPtr ReleaseDC(IntPtr hwnd,IntPtr hdc);
 
 
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            e.Graphics.Clear(Color.CadetBlue);
+
+            var renderGraphic = e.Graphics;
+            var renderProcessArr = Process.GetProcessesByName("RenderApp");
+            if (renderProcessArr.Length > 0)
+            {
+                //跨进程渲染，如果RenderApp.exe已启动则在该进程的主界面上进行绘制
+                var renderFormHandle = renderProcessArr[0].MainWindowHandle;
+                var renderHdc = GetDC(renderFormHandle);
+                renderGraphic = Graphics.FromHdc(renderHdc);
+            }
+
+            renderGraphic.Clear(Color.CadetBlue);
 
             var currentContext = BufferedGraphicsManager.Current;
-            var buffer = currentContext.Allocate(e.Graphics, ClientRectangle);
+            var buffer = currentContext.Allocate(renderGraphic, ClientRectangle);
             var g = buffer.Graphics;
             g.CompositingMode = CompositingMode.SourceOver;
             g.CompositingQuality = CompositingQuality.HighSpeed;
@@ -47,13 +76,13 @@ namespace VectorDrawApp
 
             var layout = Document.ActiveLayOut;
             layout.Printer.InitializeProperties();
-            layout.Printer.Resolution = (int)e.Graphics.DpiX; //Screen DPI
+            layout.Printer.Resolution = (int)renderGraphic.DpiX; //Screen DPI
             layout.Printer.paperSize = new Rectangle(0, 0, Width * 100 / layout.Printer.Resolution, Width * 100 / layout.Printer.Resolution);
             layout.Printer.PrintWindow = RenderingArea;
             layout.Printer.RenderToGraphics(g, Color.White);
 
             //把缓冲区中的内容一次性写入到界面
-            buffer.Render(e.Graphics);
+            buffer.Render(renderGraphic);
             g.Dispose();
             buffer.Dispose();//释放资源 
         }
