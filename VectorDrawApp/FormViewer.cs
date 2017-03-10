@@ -36,7 +36,7 @@ namespace VectorDrawApp
         /// </summary>
         /// <param name="hwnd"></param>
         /// <returns></returns>
-        [DllImport("USER32.DLL",EntryPoint = "GetDC")]
+        [DllImport("USER32.DLL", EntryPoint = "GetDC")]
         public static extern IntPtr GetDC(IntPtr hwnd);
 
         /// <summary>
@@ -46,7 +46,7 @@ namespace VectorDrawApp
         /// <param name="hdc"></param>
         /// <returns></returns>
         [DllImport("USER32.DLL", EntryPoint = "ReleaseDC")]
-        public static extern IntPtr ReleaseDC(IntPtr hwnd,IntPtr hdc);
+        public static extern IntPtr ReleaseDC(IntPtr hwnd, IntPtr hdc);
 
 
         protected override void OnPaint(PaintEventArgs e)
@@ -54,12 +54,14 @@ namespace VectorDrawApp
             base.OnPaint(e);
 
             var renderGraphic = e.Graphics;
+            var renderHdc = IntPtr.Zero;
+            var renderFormHandle = IntPtr.Zero;
             var renderProcessArr = Process.GetProcessesByName("RenderApp");
             if (renderProcessArr.Length > 0)
             {
                 //跨进程渲染，如果RenderApp.exe已启动则在该进程的主界面上进行绘制
-                var renderFormHandle = renderProcessArr[0].MainWindowHandle;
-                var renderHdc = GetDC(renderFormHandle);
+                renderFormHandle = renderProcessArr[0].MainWindowHandle;
+                renderHdc = GetDC(renderFormHandle);
                 renderGraphic = Graphics.FromHdc(renderHdc);
             }
 
@@ -74,17 +76,31 @@ namespace VectorDrawApp
             g.PixelOffsetMode = PixelOffsetMode.HighSpeed;
             g.InterpolationMode = InterpolationMode.HighQualityBilinear;
 
+
             var layout = Document.ActiveLayOut;
-            layout.Printer.InitializeProperties();
-            layout.Printer.Resolution = (int)renderGraphic.DpiX; //Screen DPI
-            layout.Printer.paperSize = new Rectangle(0, 0, Width * 100 / layout.Printer.Resolution, Width * 100 / layout.Printer.Resolution);
-            layout.Printer.PrintWindow = RenderingArea;
-            layout.Printer.RenderToGraphics(g, Color.White);
+            using (var bitmap = new Bitmap(Width, Height))
+            {
+                using (var bitmapGraphic = Graphics.FromImage(bitmap))
+                {
+                    layout.RenderToGraphics(bitmapGraphic, RenderingArea, Width, Height);
+                }
+                g.DrawImage(bitmap,0,0);
+            }
+            
+
+            //layout.Printer.InitializeProperties();
+            //layout.Printer.Resolution = (int)renderGraphic.DpiX; //Screen DPI
+            //layout.Printer.paperSize = new Rectangle(0, 0, Width * 100 / layout.Printer.Resolution, Width * 100 / layout.Printer.Resolution);
+            //layout.Printer.PrintWindow = RenderingArea;
+            //layout.Printer.RenderToGraphics(g, Color.White);
 
             //把缓冲区中的内容一次性写入到界面
             buffer.Render(renderGraphic);
             g.Dispose();
-            buffer.Dispose();//释放资源 
+            buffer.Dispose();//释放资源
+
+            if (renderHdc != IntPtr.Zero)
+                ReleaseDC(renderFormHandle, renderHdc);
         }
     }
 }

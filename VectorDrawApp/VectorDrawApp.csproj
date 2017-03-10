@@ -106,6 +106,7 @@
     <Compile Include="Commands\DetailSelectionCommand.cs" />
     <Compile Include="Commands\FindSimilarsCommand.cs" />
     <Compile Include="Commands\LocateGridSelectionCommand.cs" />
+    <Compile Include="Commands\PrintCommand.cs" />
     <Compile Include="Commands\SelectNextCommand.cs" />
     <Compile Include="Commands\VectorDrawCommand.cs" />
     <Compile Include="FormViewer.cs">

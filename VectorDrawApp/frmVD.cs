@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using VectorDraw.Geometry;
+using VectorDraw.Professional.vdObjects;
 using VectorDrawApp.MatchingLib;
 using VectorDraw.Professional.vdPrimaries;
 using VectorDrawApp.Commands;
@@ -315,6 +317,24 @@ namespace VectorDrawApp
                 };
                 form.Show(this);
             }
+        }
+
+        private void btnInsertRect_Click(object sender, EventArgs e)
+        {
+            var document = VD.BaseControl.ActiveDocument;
+            var layout = document.ActiveLayOut;
+            if (document.CommandAction.CmdRect("USER", "USER"))
+            {
+                var rect = layout.Entities.Last;
+                rect.PenColor = new vdColor(Color.BlueViolet);
+                VdActionUtil.RefreshVectorDraw(document);
+            }
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            var command = new PrintCommand();
+            command.Execute(VD);
         }
     }
 }

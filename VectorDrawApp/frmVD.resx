@@ -150,6 +150,165 @@
   <data name="grpxCond.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
   </data>
+  <data name="&gt;&gt;btnPrint.Name" xml:space="preserve">
+    <value>btnPrint</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.Parent" xml:space="preserve">
+    <value>grpxCond</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnInsertRect.Name" xml:space="preserve">
+    <value>btnInsertRect</value>
+  </data>
+  <data name="&gt;&gt;btnInsertRect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnInsertRect.Parent" xml:space="preserve">
+    <value>grpxCond</value>
+  </data>
+  <data name="&gt;&gt;btnInsertRect.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnViewBox.Name" xml:space="preserve">
+    <value>btnViewBox</value>
+  </data>
+  <data name="&gt;&gt;btnViewBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnViewBox.Parent" xml:space="preserve">
+    <value>grpxCond</value>
+  </data>
+  <data name="&gt;&gt;btnViewBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnDisNode.Name" xml:space="preserve">
+    <value>btnDisNode</value>
+  </data>
+  <data name="&gt;&gt;btnDisNode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDisNode.Parent" xml:space="preserve">
+    <value>grpxCond</value>
+  </data>
+  <data name="&gt;&gt;btnDisNode.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;grpxItemList.Name" xml:space="preserve">
+    <value>grpxItemList</value>
+  </data>
+  <data name="&gt;&gt;grpxItemList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpxItemList.Parent" xml:space="preserve">
+    <value>grpxCond</value>
+  </data>
+  <data name="&gt;&gt;grpxItemList.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnVisibleProperty.Name" xml:space="preserve">
+    <value>btnVisibleProperty</value>
+  </data>
+  <data name="&gt;&gt;btnVisibleProperty.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnVisibleProperty.Parent" xml:space="preserve">
+    <value>grpxCond</value>
+  </data>
+  <data name="&gt;&gt;btnVisibleProperty.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnFindById.Name" xml:space="preserve">
+    <value>btnFindById</value>
+  </data>
+  <data name="&gt;&gt;btnFindById.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnFindById.Parent" xml:space="preserve">
+    <value>grpxCond</value>
+  </data>
+  <data name="&gt;&gt;btnFindById.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtHandleId.Name" xml:space="preserve">
+    <value>txtHandleId</value>
+  </data>
+  <data name="&gt;&gt;txtHandleId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtHandleId.Parent" xml:space="preserve">
+    <value>grpxCond</value>
+  </data>
+  <data name="&gt;&gt;txtHandleId.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lblHandleId.Name" xml:space="preserve">
+    <value>lblHandleId</value>
+  </data>
+  <data name="&gt;&gt;lblHandleId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblHandleId.Parent" xml:space="preserve">
+    <value>grpxCond</value>
+  </data>
+  <data name="&gt;&gt;lblHandleId.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="grpxCond.Location" type="System.Drawing.Point, System.Drawing">
+    <value>580, 1</value>
+  </data>
+  <data name="grpxCond.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 616</value>
+  </data>
+  <data name="grpxCond.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="grpxCond.Text" xml:space="preserve">
+    <value>快速操作</value>
+  </data>
+  <data name="&gt;&gt;grpxCond.Name" xml:space="preserve">
+    <value>grpxCond</value>
+  </data>
+  <data name="&gt;&gt;grpxCond.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpxCond.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpxCond.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnInsertRect.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnInsertRect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 158</value>
+  </data>
+  <data name="btnInsertRect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnInsertRect.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="btnInsertRect.Text" xml:space="preserve">
+    <value>InsertRect</value>
+  </data>
+  <data name="&gt;&gt;btnInsertRect.Name" xml:space="preserve">
+    <value>btnInsertRect</value>
+  </data>
+  <data name="&gt;&gt;btnInsertRect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnInsertRect.Parent" xml:space="preserve">
+    <value>grpxCond</value>
+  </data>
+  <data name="&gt;&gt;btnInsertRect.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="btnViewBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -175,7 +334,7 @@
     <value>grpxCond</value>
   </data>
   <data name="&gt;&gt;btnViewBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="btnDisNode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -202,14 +361,83 @@
     <value>grpxCond</value>
   </data>
   <data name="&gt;&gt;btnDisNode.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="grpxItemList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
   </data>
+  <data name="&gt;&gt;tree.Name" xml:space="preserve">
+    <value>tree</value>
+  </data>
+  <data name="&gt;&gt;tree.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tree.Parent" xml:space="preserve">
+    <value>grpxItemList</value>
+  </data>
+  <data name="&gt;&gt;tree.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grpxItemList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 216</value>
+  </data>
+  <data name="grpxItemList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 401</value>
+  </data>
+  <data name="grpxItemList.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="grpxItemList.Text" xml:space="preserve">
+    <value>匹配结果</value>
+  </data>
+  <data name="&gt;&gt;grpxItemList.Name" xml:space="preserve">
+    <value>grpxItemList</value>
+  </data>
+  <data name="&gt;&gt;grpxItemList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpxItemList.Parent" xml:space="preserve">
+    <value>grpxCond</value>
+  </data>
+  <data name="&gt;&gt;grpxItemList.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <metadata name="ctxTree.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="ctxTree.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 142</value>
+  </data>
+  <data name="&gt;&gt;ctxTree.Name" xml:space="preserve">
+    <value>ctxTree</value>
+  </data>
+  <data name="&gt;&gt;ctxTree.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tree.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tree.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 17</value>
+  </data>
+  <data name="tree.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 381</value>
+  </data>
+  <data name="tree.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tree.Name" xml:space="preserve">
+    <value>tree</value>
+  </data>
+  <data name="&gt;&gt;tree.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tree.Parent" xml:space="preserve">
+    <value>grpxItemList</value>
+  </data>
+  <data name="&gt;&gt;tree.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="tsmiSelectAllSub.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 22</value>
   </data>
@@ -249,63 +477,6 @@
   <data name="tsmiImport.Text" xml:space="preserve">
     <value>导入剪切板中的Xml</value>
   </data>
-  <data name="ctxTree.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 142</value>
-  </data>
-  <data name="&gt;&gt;ctxTree.Name" xml:space="preserve">
-    <value>ctxTree</value>
-  </data>
-  <data name="&gt;&gt;ctxTree.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tree.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tree.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 17</value>
-  </data>
-  <data name="tree.Size" type="System.Drawing.Size, System.Drawing">
-    <value>201, 381</value>
-  </data>
-  <data name="tree.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tree.Name" xml:space="preserve">
-    <value>tree</value>
-  </data>
-  <data name="&gt;&gt;tree.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tree.Parent" xml:space="preserve">
-    <value>grpxItemList</value>
-  </data>
-  <data name="&gt;&gt;tree.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="grpxItemList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 216</value>
-  </data>
-  <data name="grpxItemList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 401</value>
-  </data>
-  <data name="grpxItemList.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="grpxItemList.Text" xml:space="preserve">
-    <value>匹配结果</value>
-  </data>
-  <data name="&gt;&gt;grpxItemList.Name" xml:space="preserve">
-    <value>grpxItemList</value>
-  </data>
-  <data name="&gt;&gt;grpxItemList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpxItemList.Parent" xml:space="preserve">
-    <value>grpxCond</value>
-  </data>
-  <data name="&gt;&gt;grpxItemList.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="btnVisibleProperty.Location" type="System.Drawing.Point, System.Drawing">
     <value>133, 142</value>
   </data>
@@ -328,7 +499,7 @@
     <value>grpxCond</value>
   </data>
   <data name="&gt;&gt;btnVisibleProperty.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="btnFindById.Location" type="System.Drawing.Point, System.Drawing">
     <value>133, 113</value>
@@ -352,7 +523,7 @@
     <value>grpxCond</value>
   </data>
   <data name="&gt;&gt;btnFindById.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="txtHandleId.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 37</value>
@@ -376,7 +547,7 @@
     <value>grpxCond</value>
   </data>
   <data name="&gt;&gt;txtHandleId.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="lblHandleId.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -403,31 +574,34 @@
     <value>grpxCond</value>
   </data>
   <data name="&gt;&gt;lblHandleId.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
-  <data name="grpxCond.Location" type="System.Drawing.Point, System.Drawing">
-    <value>580, 1</value>
+  <data name="btnPrint.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="grpxCond.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 616</value>
+  <data name="btnPrint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 129</value>
   </data>
-  <data name="grpxCond.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="btnPrint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
-  <data name="grpxCond.Text" xml:space="preserve">
-    <value>快速操作</value>
+  <data name="btnPrint.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
-  <data name="&gt;&gt;grpxCond.Name" xml:space="preserve">
+  <data name="btnPrint.Text" xml:space="preserve">
+    <value>PrintRect</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.Name" xml:space="preserve">
+    <value>btnPrint</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.Parent" xml:space="preserve">
     <value>grpxCond</value>
   </data>
-  <data name="&gt;&gt;grpxCond.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpxCond.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpxCond.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;btnPrint.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVD));
             this.VD = new vdControls.vdFramedControl();
             this.grpxCond = new System.Windows.Forms.GroupBox();
+            this.btnInsertRect = new System.Windows.Forms.Button();
+            this.btnViewBox = new System.Windows.Forms.Button();
             this.btnDisNode = new System.Windows.Forms.Button();
             this.grpxItemList = new System.Windows.Forms.GroupBox();
             this.tree = new System.Windows.Forms.TreeView();
@@ -47,7 +49,7 @@
             this.btnFindById = new System.Windows.Forms.Button();
             this.txtHandleId = new System.Windows.Forms.TextBox();
             this.lblHandleId = new System.Windows.Forms.Label();
-            this.btnViewBox = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.grpxCond.SuspendLayout();
             this.grpxItemList.SuspendLayout();
             this.ctxTree.SuspendLayout();
@@ -65,6 +67,8 @@
             // grpxCond
             // 
             resources.ApplyResources(this.grpxCond, "grpxCond");
+            this.grpxCond.Controls.Add(this.btnPrint);
+            this.grpxCond.Controls.Add(this.btnInsertRect);
             this.grpxCond.Controls.Add(this.btnViewBox);
             this.grpxCond.Controls.Add(this.btnDisNode);
             this.grpxCond.Controls.Add(this.grpxItemList);
@@ -74,6 +78,20 @@
             this.grpxCond.Controls.Add(this.lblHandleId);
             this.grpxCond.Name = "grpxCond";
             this.grpxCond.TabStop = false;
+            // 
+            // btnInsertRect
+            // 
+            resources.ApplyResources(this.btnInsertRect, "btnInsertRect");
+            this.btnInsertRect.Name = "btnInsertRect";
+            this.btnInsertRect.UseVisualStyleBackColor = true;
+            this.btnInsertRect.Click += new System.EventHandler(this.btnInsertRect_Click);
+            // 
+            // btnViewBox
+            // 
+            resources.ApplyResources(this.btnViewBox, "btnViewBox");
+            this.btnViewBox.Name = "btnViewBox";
+            this.btnViewBox.UseVisualStyleBackColor = true;
+            this.btnViewBox.Click += new System.EventHandler(this.btnViewBox_Click);
             // 
             // btnDisNode
             // 
@@ -180,12 +198,12 @@
             resources.ApplyResources(this.lblHandleId, "lblHandleId");
             this.lblHandleId.Name = "lblHandleId";
             // 
-            // btnViewBox
+            // btnPrint
             // 
-            resources.ApplyResources(this.btnViewBox, "btnViewBox");
-            this.btnViewBox.Name = "btnViewBox";
-            this.btnViewBox.UseVisualStyleBackColor = true;
-            this.btnViewBox.Click += new System.EventHandler(this.btnViewBox_Click);
+            resources.ApplyResources(this.btnPrint, "btnPrint");
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // frmVD
             // 
@@ -227,5 +245,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiImport;
         private System.Windows.Forms.ToolStripMenuItem tsmiDelete;
         private System.Windows.Forms.Button btnViewBox;
+        private System.Windows.Forms.Button btnInsertRect;
+        private System.Windows.Forms.Button btnPrint;
     }
 }
